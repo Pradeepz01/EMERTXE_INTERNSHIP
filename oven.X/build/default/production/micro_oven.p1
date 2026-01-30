@@ -1,0 +1,608 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"32 ./clcd.h
+[; ;./clcd.h: 32: void clcd_putch(const char data, unsigned char addr);
+[v _clcd_putch `(v ~T0 @X0 0 ef2`Cuc`uc ]
+[v F972 `(v ~T0 @X0 1 tf1`ul ]
+"92 D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include/pic.h
+[v __delay `JF972 ~T0 @X0 0 e ]
+[p i __delay ]
+"33 ./clcd.h
+[; ;./clcd.h: 33: void clcd_print(const char *str, unsigned char addr);
+[v _clcd_print `(v ~T0 @X0 0 ef2`*Cuc`uc ]
+"33 ./micro_oven.h
+[; ;./micro_oven.h: 33: void clear_screen(void);
+[v _clear_screen `(v ~T0 @X0 0 ef ]
+"34 ./clcd.h
+[; ;./clcd.h: 34: void clcd_write(unsigned char byte, unsigned char mode);
+[v _clcd_write `(v ~T0 @X0 0 ef2`uc`uc ]
+"54 D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 54: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"61
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 61: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"68
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 68: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"75
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 75: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"161
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 161: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"168
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 168: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"218
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 218: __asm("PORTB equ 06h");
+[; <" PORTB equ 06h ;# ">
+"280
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 280: __asm("PORTC equ 07h");
+[; <" PORTC equ 07h ;# ">
+"342
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 342: __asm("PORTD equ 08h");
+[; <" PORTD equ 08h ;# ">
+"404
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 404: __asm("PORTE equ 09h");
+[; <" PORTE equ 09h ;# ">
+"436
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 436: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"456
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 456: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"534
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 534: __asm("PIR1 equ 0Ch");
+[; <" PIR1 equ 0Ch ;# ">
+"596
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 596: __asm("PIR2 equ 0Dh");
+[; <" PIR2 equ 0Dh ;# ">
+"636
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 636: __asm("TMR1 equ 0Eh");
+[; <" TMR1 equ 0Eh ;# ">
+"643
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 643: __asm("TMR1L equ 0Eh");
+[; <" TMR1L equ 0Eh ;# ">
+"650
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 650: __asm("TMR1H equ 0Fh");
+[; <" TMR1H equ 0Fh ;# ">
+"657
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 657: __asm("T1CON equ 010h");
+[; <" T1CON equ 010h ;# ">
+"732
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 732: __asm("TMR2 equ 011h");
+[; <" TMR2 equ 011h ;# ">
+"739
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 739: __asm("T2CON equ 012h");
+[; <" T2CON equ 012h ;# ">
+"810
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 810: __asm("SSPBUF equ 013h");
+[; <" SSPBUF equ 013h ;# ">
+"817
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 817: __asm("SSPCON equ 014h");
+[; <" SSPCON equ 014h ;# ">
+"887
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 887: __asm("CCPR1 equ 015h");
+[; <" CCPR1 equ 015h ;# ">
+"894
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 894: __asm("CCPR1L equ 015h");
+[; <" CCPR1L equ 015h ;# ">
+"901
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 901: __asm("CCPR1H equ 016h");
+[; <" CCPR1H equ 016h ;# ">
+"908
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 908: __asm("CCP1CON equ 017h");
+[; <" CCP1CON equ 017h ;# ">
+"966
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 966: __asm("RCSTA equ 018h");
+[; <" RCSTA equ 018h ;# ">
+"1061
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1061: __asm("TXREG equ 019h");
+[; <" TXREG equ 019h ;# ">
+"1068
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1068: __asm("RCREG equ 01Ah");
+[; <" RCREG equ 01Ah ;# ">
+"1075
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1075: __asm("CCPR2 equ 01Bh");
+[; <" CCPR2 equ 01Bh ;# ">
+"1082
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1082: __asm("CCPR2L equ 01Bh");
+[; <" CCPR2L equ 01Bh ;# ">
+"1089
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1089: __asm("CCPR2H equ 01Ch");
+[; <" CCPR2H equ 01Ch ;# ">
+"1096
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1096: __asm("CCP2CON equ 01Dh");
+[; <" CCP2CON equ 01Dh ;# ">
+"1154
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1154: __asm("ADRESH equ 01Eh");
+[; <" ADRESH equ 01Eh ;# ">
+"1161
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1161: __asm("ADCON0 equ 01Fh");
+[; <" ADCON0 equ 01Fh ;# ">
+"1257
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1257: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"1327
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1327: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"1377
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1377: __asm("TRISB equ 086h");
+[; <" TRISB equ 086h ;# ">
+"1439
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1439: __asm("TRISC equ 087h");
+[; <" TRISC equ 087h ;# ">
+"1501
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1501: __asm("TRISD equ 088h");
+[; <" TRISD equ 088h ;# ">
+"1563
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1563: __asm("TRISE equ 089h");
+[; <" TRISE equ 089h ;# ">
+"1620
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1620: __asm("PIE1 equ 08Ch");
+[; <" PIE1 equ 08Ch ;# ">
+"1682
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1682: __asm("PIE2 equ 08Dh");
+[; <" PIE2 equ 08Dh ;# ">
+"1722
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1722: __asm("PCON equ 08Eh");
+[; <" PCON equ 08Eh ;# ">
+"1756
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1756: __asm("SSPCON2 equ 091h");
+[; <" SSPCON2 equ 091h ;# ">
+"1818
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1818: __asm("PR2 equ 092h");
+[; <" PR2 equ 092h ;# ">
+"1825
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1825: __asm("SSPADD equ 093h");
+[; <" SSPADD equ 093h ;# ">
+"1832
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1832: __asm("SSPSTAT equ 094h");
+[; <" SSPSTAT equ 094h ;# ">
+"2001
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 2001: __asm("TXSTA equ 098h");
+[; <" TXSTA equ 098h ;# ">
+"2082
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 2082: __asm("SPBRG equ 099h");
+[; <" SPBRG equ 099h ;# ">
+"2089
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 2089: __asm("CMCON equ 09Ch");
+[; <" CMCON equ 09Ch ;# ">
+"2159
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 2159: __asm("CVRCON equ 09Dh");
+[; <" CVRCON equ 09Dh ;# ">
+"2224
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 2224: __asm("ADRESL equ 09Eh");
+[; <" ADRESL equ 09Eh ;# ">
+"2231
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 2231: __asm("ADCON1 equ 09Fh");
+[; <" ADCON1 equ 09Fh ;# ">
+"2290
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 2290: __asm("EEDATA equ 010Ch");
+[; <" EEDATA equ 010Ch ;# ">
+"2297
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 2297: __asm("EEADR equ 010Dh");
+[; <" EEADR equ 010Dh ;# ">
+"2304
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 2304: __asm("EEDATH equ 010Eh");
+[; <" EEDATH equ 010Eh ;# ">
+"2311
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 2311: __asm("EEADRH equ 010Fh");
+[; <" EEADRH equ 010Fh ;# ">
+"2318
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 2318: __asm("EECON1 equ 018Ch");
+[; <" EECON1 equ 018Ch ;# ">
+"2363
+[; ;D:/USEME FOLDER/EMERTXE/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 2363: __asm("EECON2 equ 018Dh");
+[; <" EECON2 equ 018Dh ;# ">
+"3 micro_oven.c
+[; ;micro_oven.c: 3: void power_on_screen(void) {
+[v _power_on_screen `(v ~T0 @X0 1 ef ]
+{
+[e :U _power_on_screen ]
+[f ]
+"4
+[; ;micro_oven.c: 4:     for (unsigned char i = 0; i < 16; i++) {
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 16 `i 100  ]
+[e $U 101  ]
+[e :U 100 ]
+{
+"5
+[; ;micro_oven.c: 5:         clcd_putch((const char)0xFF, ((unsigned char)(0x80 + i)));
+[e ( _clcd_putch (2 , -> -> 255 `i `uc -> + -> 128 `i -> _i `i `uc ]
+"6
+[; ;micro_oven.c: 6:         _delay((unsigned long)((50)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"7
+[; ;micro_oven.c: 7:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 16 `i 100  ]
+[e :U 101 ]
+}
+"8
+[; ;micro_oven.c: 8:     clcd_print("Powering ON", ((unsigned char)(0xC0 + 2)));
+[e ( _clcd_print (2 , :s 1C -> + -> 192 `i -> 2 `i `uc ]
+"9
+[; ;micro_oven.c: 9:     clcd_print("Microwave Oven", ((unsigned char)(0x90 + 1)));
+[e ( _clcd_print (2 , :s 2C -> + -> 144 `i -> 1 `i `uc ]
+"10
+[; ;micro_oven.c: 10:     for (unsigned char i = 0; i < 16; i++) {
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 16 `i 103  ]
+[e $U 104  ]
+[e :U 103 ]
+{
+"11
+[; ;micro_oven.c: 11:         clcd_putch((const char)0xFF, ((unsigned char)(0xD0 + i)));
+[e ( _clcd_putch (2 , -> -> 255 `i `uc -> + -> 208 `i -> _i `i `uc ]
+"12
+[; ;micro_oven.c: 12:         _delay((unsigned long)((50)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"13
+[; ;micro_oven.c: 13:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 16 `i 103  ]
+[e :U 104 ]
+}
+"14
+[; ;micro_oven.c: 14:     _delay((unsigned long)((1500)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1500 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"15
+[; ;micro_oven.c: 15:     clear_screen();
+[e ( _clear_screen ..  ]
+"16
+[; ;micro_oven.c: 16: }
+[e :UE 99 ]
+}
+"18
+[; ;micro_oven.c: 18: void clear_screen(void) {
+[v _clear_screen `(v ~T0 @X0 1 ef ]
+{
+[e :U _clear_screen ]
+[f ]
+"19
+[; ;micro_oven.c: 19:     clcd_write(0x01, 0);
+[e ( _clcd_write (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
+"20
+[; ;micro_oven.c: 20:     _delay((unsigned long)((500)*(20000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 20000000 `l `d .4000000.0 `ul ]
+"21
+[; ;micro_oven.c: 21: }
+[e :UE 106 ]
+}
+"23
+[; ;micro_oven.c: 23: void display_main_menu(void) {
+[v _display_main_menu `(v ~T0 @X0 1 ef ]
+{
+[e :U _display_main_menu ]
+[f ]
+"24
+[; ;micro_oven.c: 24:     clcd_print("1. MICRO", ((unsigned char)(0x80 + 0)));
+[e ( _clcd_print (2 , :s 3C -> + -> 128 `i -> 0 `i `uc ]
+"25
+[; ;micro_oven.c: 25:     clcd_print("2. GRILL", ((unsigned char)(0xC0 + 0)));
+[e ( _clcd_print (2 , :s 4C -> + -> 192 `i -> 0 `i `uc ]
+"26
+[; ;micro_oven.c: 26:     clcd_print("3. CONVECTION", ((unsigned char)(0x90 + 0)));
+[e ( _clcd_print (2 , :s 5C -> + -> 144 `i -> 0 `i `uc ]
+"27
+[; ;micro_oven.c: 27:     clcd_print("4. START", ((unsigned char)(0xD0 + 0)));
+[e ( _clcd_print (2 , :s 6C -> + -> 208 `i -> 0 `i `uc ]
+"28
+[; ;micro_oven.c: 28: }
+[e :UE 107 ]
+}
+"30
+[; ;micro_oven.c: 30: void display_time_screen(void) {
+[v _display_time_screen `(v ~T0 @X0 1 ef ]
+{
+[e :U _display_time_screen ]
+[f ]
+"31
+[; ;micro_oven.c: 31:     clcd_print("SET TIME (MM:SS)", ((unsigned char)(0x80 + 0)));
+[e ( _clcd_print (2 , :s 7C -> + -> 128 `i -> 0 `i `uc ]
+"32
+[; ;micro_oven.c: 32:     clcd_print("TIME: 00:00", ((unsigned char)(0xC0 + 0)));
+[e ( _clcd_print (2 , :s 8C -> + -> 192 `i -> 0 `i `uc ]
+"33
+[; ;micro_oven.c: 33:     clcd_print("*:CLEAR  #:ENTER", ((unsigned char)(0xD0 + 0)));
+[e ( _clcd_print (2 , :s 9C -> + -> 208 `i -> 0 `i `uc ]
+"34
+[; ;micro_oven.c: 34: }
+[e :UE 108 ]
+}
+"36
+[; ;micro_oven.c: 36: void set_time(unsigned char key, unsigned int *min, unsigned int *sec) {
+[v _set_time `(v ~T0 @X0 1 ef3`uc`*ui`*ui ]
+{
+[e :U _set_time ]
+[v _key `uc ~T0 @X0 1 r1 ]
+[v _min `*ui ~T0 @X0 1 r2 ]
+[v _sec `*ui ~T0 @X0 1 r3 ]
+[f ]
+"37
+[; ;micro_oven.c: 37:     static int pos = 0;
+[v F1018 `i ~T0 @X0 1 s pos ]
+[i F1018
+-> 0 `i
+]
+"39
+[; ;micro_oven.c: 39:     if (key == '*') {
+[e $ ! == -> _key `ui -> 42 `ui 110  ]
+{
+"40
+[; ;micro_oven.c: 40:         *min = 0;
+[e = *U _min -> -> 0 `i `ui ]
+"41
+[; ;micro_oven.c: 41:         *sec = 0;
+[e = *U _sec -> -> 0 `i `ui ]
+"42
+[; ;micro_oven.c: 42:         pos = 0;
+[e = F1018 -> 0 `i ]
+"43
+[; ;micro_oven.c: 43:     } else if (key <= 9) {
+}
+[e $U 111  ]
+[e :U 110 ]
+[e $ ! <= -> _key `i -> 9 `i 112  ]
+{
+"44
+[; ;micro_oven.c: 44:         if (pos == 0) {
+[e $ ! == F1018 -> 0 `i 113  ]
+{
+"45
+[; ;micro_oven.c: 45:             *min = (unsigned int)key * 10;
+[e = *U _min * -> _key `ui -> -> 10 `i `ui ]
+"46
+[; ;micro_oven.c: 46:             pos++;
+[e ++ F1018 -> 1 `i ]
+"47
+[; ;micro_oven.c: 47:         } else if (pos == 1) {
+}
+[e $U 114  ]
+[e :U 113 ]
+[e $ ! == F1018 -> 1 `i 115  ]
+{
+"48
+[; ;micro_oven.c: 48:             *min += (unsigned int)key;
+[e =+ *U _min -> _key `ui ]
+"49
+[; ;micro_oven.c: 49:             pos++;
+[e ++ F1018 -> 1 `i ]
+"50
+[; ;micro_oven.c: 50:         } else if (pos == 2) {
+}
+[e $U 116  ]
+[e :U 115 ]
+[e $ ! == F1018 -> 2 `i 117  ]
+{
+"51
+[; ;micro_oven.c: 51:             *sec = (unsigned int)key * 10;
+[e = *U _sec * -> _key `ui -> -> 10 `i `ui ]
+"52
+[; ;micro_oven.c: 52:             pos++;
+[e ++ F1018 -> 1 `i ]
+"53
+[; ;micro_oven.c: 53:         } else if (pos == 3) {
+}
+[e $U 118  ]
+[e :U 117 ]
+[e $ ! == F1018 -> 3 `i 119  ]
+{
+"54
+[; ;micro_oven.c: 54:             *sec += (unsigned int)key;
+[e =+ *U _sec -> _key `ui ]
+"55
+[; ;micro_oven.c: 55:             pos = 0;
+[e = F1018 -> 0 `i ]
+"56
+[; ;micro_oven.c: 56:         }
+}
+[e :U 119 ]
+[e :U 118 ]
+[e :U 116 ]
+[e :U 114 ]
+"57
+[; ;micro_oven.c: 57:     }
+}
+[e :U 112 ]
+[e :U 111 ]
+"59
+[; ;micro_oven.c: 59:     char time_str[6];
+[v _time_str `uc ~T0 @X0 -> 6 `i a ]
+"60
+[; ;micro_oven.c: 60:     time_str[0] = (char)((*min / 10) + '0');
+[e = *U + &U _time_str * -> -> -> 0 `i `ui `ux -> -> # *U &U _time_str `ui `ux -> + / *U _min -> -> 10 `i `ui -> 48 `ui `uc ]
+"61
+[; ;micro_oven.c: 61:     time_str[1] = (char)((*min % 10) + '0');
+[e = *U + &U _time_str * -> -> -> 1 `i `ui `ux -> -> # *U &U _time_str `ui `ux -> + % *U _min -> -> 10 `i `ui -> 48 `ui `uc ]
+"62
+[; ;micro_oven.c: 62:     time_str[2] = ':';
+[e = *U + &U _time_str * -> -> -> 2 `i `ui `ux -> -> # *U &U _time_str `ui `ux -> -> 58 `ui `uc ]
+"63
+[; ;micro_oven.c: 63:     time_str[3] = (char)((*sec / 10) + '0');
+[e = *U + &U _time_str * -> -> -> 3 `i `ui `ux -> -> # *U &U _time_str `ui `ux -> + / *U _sec -> -> 10 `i `ui -> 48 `ui `uc ]
+"64
+[; ;micro_oven.c: 64:     time_str[4] = (char)((*sec % 10) + '0');
+[e = *U + &U _time_str * -> -> -> 4 `i `ui `ux -> -> # *U &U _time_str `ui `ux -> + % *U _sec -> -> 10 `i `ui -> 48 `ui `uc ]
+"65
+[; ;micro_oven.c: 65:     time_str[5] = '\0';
+[e = *U + &U _time_str * -> -> -> 5 `i `ui `ux -> -> # *U &U _time_str `ui `ux -> -> 0 `ui `uc ]
+"67
+[; ;micro_oven.c: 67:     clcd_print(time_str, ((unsigned char)(0xC0 + 6)));
+[e ( _clcd_print (2 , -> &U _time_str `*Cuc -> + -> 192 `i -> 6 `i `uc ]
+"68
+[; ;micro_oven.c: 68: }
+[e :UE 109 ]
+}
+"70
+[; ;micro_oven.c: 70: void set_temp(unsigned char key, unsigned int *temp) {
+[v _set_temp `(v ~T0 @X0 1 ef2`uc`*ui ]
+{
+[e :U _set_temp ]
+[v _key `uc ~T0 @X0 1 r1 ]
+[v _temp `*ui ~T0 @X0 1 r2 ]
+[f ]
+"71
+[; ;micro_oven.c: 71:     static int pos = 0;
+[v F1023 `i ~T0 @X0 1 s pos ]
+[i F1023
+-> 0 `i
+]
+"72
+[; ;micro_oven.c: 72:     if (key == '*') {
+[e $ ! == -> _key `ui -> 42 `ui 121  ]
+{
+"73
+[; ;micro_oven.c: 73:         *temp = 0;
+[e = *U _temp -> -> 0 `i `ui ]
+"74
+[; ;micro_oven.c: 74:         pos = 0;
+[e = F1023 -> 0 `i ]
+"75
+[; ;micro_oven.c: 75:     } else if (key <= 9) {
+}
+[e $U 122  ]
+[e :U 121 ]
+[e $ ! <= -> _key `i -> 9 `i 123  ]
+{
+"76
+[; ;micro_oven.c: 76:         if (pos == 0) {
+[e $ ! == F1023 -> 0 `i 124  ]
+{
+"77
+[; ;micro_oven.c: 77:             *temp = (unsigned int)key * 100;
+[e = *U _temp * -> _key `ui -> -> 100 `i `ui ]
+"78
+[; ;micro_oven.c: 78:             pos++;
+[e ++ F1023 -> 1 `i ]
+"79
+[; ;micro_oven.c: 79:         } else if (pos == 1) {
+}
+[e $U 125  ]
+[e :U 124 ]
+[e $ ! == F1023 -> 1 `i 126  ]
+{
+"80
+[; ;micro_oven.c: 80:             *temp += (unsigned int)key * 10;
+[e =+ *U _temp * -> _key `ui -> -> 10 `i `ui ]
+"81
+[; ;micro_oven.c: 81:             pos++;
+[e ++ F1023 -> 1 `i ]
+"82
+[; ;micro_oven.c: 82:         } else if (pos == 2) {
+}
+[e $U 127  ]
+[e :U 126 ]
+[e $ ! == F1023 -> 2 `i 128  ]
+{
+"83
+[; ;micro_oven.c: 83:             *temp += (unsigned int)key;
+[e =+ *U _temp -> _key `ui ]
+"84
+[; ;micro_oven.c: 84:             pos = 0;
+[e = F1023 -> 0 `i ]
+"85
+[; ;micro_oven.c: 85:         }
+}
+[e :U 128 ]
+[e :U 127 ]
+[e :U 125 ]
+"86
+[; ;micro_oven.c: 86:     }
+}
+[e :U 123 ]
+[e :U 122 ]
+"87
+[; ;micro_oven.c: 87:     char temp_str[5];
+[v _temp_str `uc ~T0 @X0 -> 5 `i a ]
+"88
+[; ;micro_oven.c: 88:     temp_str[0] = (char)((*temp / 100) + '0');
+[e = *U + &U _temp_str * -> -> -> 0 `i `ui `ux -> -> # *U &U _temp_str `ui `ux -> + / *U _temp -> -> 100 `i `ui -> 48 `ui `uc ]
+"89
+[; ;micro_oven.c: 89:     temp_str[1] = (char)(((*temp / 10) % 10) + '0');
+[e = *U + &U _temp_str * -> -> -> 1 `i `ui `ux -> -> # *U &U _temp_str `ui `ux -> + % / *U _temp -> -> 10 `i `ui -> -> 10 `i `ui -> 48 `ui `uc ]
+"90
+[; ;micro_oven.c: 90:     temp_str[2] = (char)((*temp % 10) + '0');
+[e = *U + &U _temp_str * -> -> -> 2 `i `ui `ux -> -> # *U &U _temp_str `ui `ux -> + % *U _temp -> -> 10 `i `ui -> 48 `ui `uc ]
+"91
+[; ;micro_oven.c: 91:     temp_str[3] = 'C';
+[e = *U + &U _temp_str * -> -> -> 3 `i `ui `ux -> -> # *U &U _temp_str `ui `ux -> -> 67 `ui `uc ]
+"92
+[; ;micro_oven.c: 92:     temp_str[4] = '\0';
+[e = *U + &U _temp_str * -> -> -> 4 `i `ui `ux -> -> # *U &U _temp_str `ui `ux -> -> 0 `ui `uc ]
+"93
+[; ;micro_oven.c: 93:     clcd_print(temp_str, ((unsigned char)(0xC0 + 8)));
+[e ( _clcd_print (2 , -> &U _temp_str `*Cuc -> + -> 192 `i -> 8 `i `uc ]
+"94
+[; ;micro_oven.c: 94: }
+[e :UE 120 ]
+}
+"96
+[; ;micro_oven.c: 96: void operation_mode(unsigned int min, unsigned int sec) {
+[v _operation_mode `(v ~T0 @X0 1 ef2`ui`ui ]
+{
+[e :U _operation_mode ]
+[v _min `ui ~T0 @X0 1 r1 ]
+[v _sec `ui ~T0 @X0 1 r2 ]
+[f ]
+"97
+[; ;micro_oven.c: 97:     clcd_print("TIME = ", ((unsigned char)(0x80 + 0)));
+[e ( _clcd_print (2 , :s 10C -> + -> 128 `i -> 0 `i `uc ]
+"98
+[; ;micro_oven.c: 98:     char time_str[6];
+[v _time_str `uc ~T0 @X0 -> 6 `i a ]
+"99
+[; ;micro_oven.c: 99:     time_str[0] = (char)((min / 10) + '0');
+[e = *U + &U _time_str * -> -> -> 0 `i `ui `ux -> -> # *U &U _time_str `ui `ux -> + / _min -> -> 10 `i `ui -> 48 `ui `uc ]
+"100
+[; ;micro_oven.c: 100:     time_str[1] = (char)((min % 10) + '0');
+[e = *U + &U _time_str * -> -> -> 1 `i `ui `ux -> -> # *U &U _time_str `ui `ux -> + % _min -> -> 10 `i `ui -> 48 `ui `uc ]
+"101
+[; ;micro_oven.c: 101:     time_str[2] = ':';
+[e = *U + &U _time_str * -> -> -> 2 `i `ui `ux -> -> # *U &U _time_str `ui `ux -> -> 58 `ui `uc ]
+"102
+[; ;micro_oven.c: 102:     time_str[3] = (char)((sec / 10) + '0');
+[e = *U + &U _time_str * -> -> -> 3 `i `ui `ux -> -> # *U &U _time_str `ui `ux -> + / _sec -> -> 10 `i `ui -> 48 `ui `uc ]
+"103
+[; ;micro_oven.c: 103:     time_str[4] = (char)((sec % 10) + '0');
+[e = *U + &U _time_str * -> -> -> 4 `i `ui `ux -> -> # *U &U _time_str `ui `ux -> + % _sec -> -> 10 `i `ui -> 48 `ui `uc ]
+"104
+[; ;micro_oven.c: 104:     time_str[5] = '\0';
+[e = *U + &U _time_str * -> -> -> 5 `i `ui `ux -> -> # *U &U _time_str `ui `ux -> -> 0 `ui `uc ]
+"105
+[; ;micro_oven.c: 105:     clcd_print(time_str, ((unsigned char)(0x80 + 7)));
+[e ( _clcd_print (2 , -> &U _time_str `*Cuc -> + -> 128 `i -> 7 `i `uc ]
+"107
+[; ;micro_oven.c: 107:     clcd_print("4.START/RESUME", ((unsigned char)(0xC0 + 0)));
+[e ( _clcd_print (2 , :s 11C -> + -> 192 `i -> 0 `i `uc ]
+"108
+[; ;micro_oven.c: 108:     clcd_print("5.PAUSE", ((unsigned char)(0x90 + 0)));
+[e ( _clcd_print (2 , :s 12C -> + -> 144 `i -> 0 `i `uc ]
+"109
+[; ;micro_oven.c: 109:     clcd_print("6.STOP", ((unsigned char)(0xD0 + 0)));
+[e ( _clcd_print (2 , :s 13C -> + -> 208 `i -> 0 `i `uc ]
+"110
+[; ;micro_oven.c: 110: }
+[e :UE 129 ]
+}
+[a 2C 77 105 99 114 111 119 97 118 101 32 79 118 101 110 0 ]
+[a 6C 52 46 32 83 84 65 82 84 0 ]
+[a 9C 42 58 67 76 69 65 82 32 32 35 58 69 78 84 69 82 0 ]
+[a 13C 54 46 83 84 79 80 0 ]
+[a 3C 49 46 32 77 73 67 82 79 0 ]
+[a 5C 51 46 32 67 79 78 86 69 67 84 73 79 78 0 ]
+[a 1C 80 111 119 101 114 105 110 103 32 79 78 0 ]
+[a 4C 50 46 32 71 82 73 76 76 0 ]
+[a 12C 53 46 80 65 85 83 69 0 ]
+[a 11C 52 46 83 84 65 82 84 47 82 69 83 85 77 69 0 ]
+[a 8C 84 73 77 69 58 32 48 48 58 48 48 0 ]
+[a 7C 83 69 84 32 84 73 77 69 32 40 77 77 58 83 83 41 0 ]
+[a 10C 84 73 77 69 32 61 32 0 ]
