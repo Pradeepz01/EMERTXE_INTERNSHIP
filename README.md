@@ -31,7 +31,7 @@ The system supports four distinct operational modes:
 3.  **Convection Mode (Mode 3)**: Temperature + Time control.
 4.  **Quick Start (Mode 4)**: Immediate 30s start.
 
-## 5. Detailed Code Walkthrough (For PPT)
+## 5. Detailed Code Walkthrough 
 
 ### Slide 1: Main Loop & State Machine
 The core of the system is a Finite State Machine (FSM) inside the `while(1)` loop. It switches between modes based on the `state` variable.
@@ -146,6 +146,6 @@ While cooking, two things happen simultaneously:
 
 ---
 
-## 7. Technical Highlights (For Q&A)
+## 7. Technical Highlights 
 *   **Why use Interrupts?** If we used a simple `delay_ms(1000)` for the clock, the system would "freeze" for 1 second. You wouldn't be able to pause or stop the oven during that second. Interrupts allow the system to be **Responsive**.
 *   **Debouncing:** The keypad uses a state check (`read_matrix_keypad`) to ensure one press is registered as one character, preventing "111" from appearing when you press "1" once.
