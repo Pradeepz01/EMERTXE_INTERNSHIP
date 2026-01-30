@@ -82,7 +82,7 @@ We use **Timer2 Interrupts** to count time accurately without blocking the main 
 void __interrupt() isr(void) {
     if (TMR2IF == 1) { // Check Timer2 Flag
         if (run_timer) {
-            if (++count == 210) { // 1 Second Calibration
+            if (++count == 450) { // 1 Second Calibration
                 count = 0;
                 if (sec > 0) sec--;
                 else if (min > 0) { min--; sec = 59; }
